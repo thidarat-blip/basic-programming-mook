@@ -1,0 +1,14 @@
+<script>
+    let numbers = [];
+    for (let i = 1; i <= 10; i++) // รับค่าตัวเลข 10 ค่า
+    {
+        numbers.push(Number(prompt('กรุณาป้อนค่าที่: ' + i)));
+    }
+ 
+    let index = 1;
+    for (let num of numbers)
+    {
+        document.write('ค่าที่ ' + index + ' = ' + num + '<br>');
+        index++;
+    }
+</script>

@@ -1,0 +1,28 @@
+<script>
+	let person = '{"fristName": "John","lastName": "Doe","userID": 1234,"pets":{"cat":"Kitty","dog":["DeeDoo","Dang"]}}';
+	let myPerson = JSON.parse(person);
+
+	//เพิ่มข้อมูล
+	myPerson.age = 25;
+
+	//แก้ไขข้อมูล
+	myPerson.lastName = "White"
+
+	//ลบ
+	delete myPerson.userID;
+
+	console.log(myPerson);
+	console.log(myPerson.fristName);
+	console.log(myPerson.lastName);
+	console.log(myPerson.userID);
+	console.log(myPerson.pets.cat);
+	console.log(myPerson.pets.dog[0]);
+	console.log(myPerson.pets.dog[1]);
+	console.log(myPerson.age);
+
+	//แปลงกลับเป็นJSON
+	let sendJSON = JSON.stringify(myPerson);
+	console.log(sendJSON);
+
+
+</script>

@@ -1,0 +1,29 @@
+<script>
+let price = Number(prompt("ระบุราคาของรถออกใหม่"));
+let age = Number(prompt("ระบุอายุการใช้งานรถ(ปี)"));
+let insucap;
+let insupayment;
+if (age <= 5)
+{
+	insucap = price * 0.8;
+	insupayment = insucap * 0.03;
+}
+else if (age > 5 && age <= 10)
+{
+	insucap = price * 0.6;
+	insupayment = insucap * 0.03;
+}
+else if (age > 10)
+{
+	insucap = price * 0.4;
+	insupayment = insucap * 0.03;
+}
+if (insupayment < 15000)
+{
+	insupayment = 15000;
+}
+		console.log("ทุนประกันรถยนต์ " + insucap + " บาท");
+		console.log("เบี้ยประกันรถยนต์ " + insupayment + " บาท");
+		document.write("ทุนประกันรถยนต์ " + insucap + " บาท" + "<br>");
+		document.write("เบี้ยประกันรถยนต์ " + insupayment + " บาท");
+</script>

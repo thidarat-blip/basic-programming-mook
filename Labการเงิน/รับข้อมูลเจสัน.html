@@ -1,0 +1,50 @@
+<script> 
+  let person = { 
+    "firstName": "Kate", 
+    "lastName": "White", 
+    "age": 25, 
+    "address": { 
+      "streetAddress": "21 2nd Street", 
+      "city": "New York", 
+      "state": "NY", 
+      "postalCode": "10021-3100" 
+    }, 
+    "phoneNumbers": [ 
+      { "type": "home", "number": "212 555-1234" }, 
+      { "type": "office", "number": "646 555-4567" }, 
+      { "type": "mobile", "number": "123 456-7890" } 
+    ], 
+    "children": ["June", "Tony"], 
+    "spouse": null 
+  };
+ 
+  // แสดงชื่อ-นามสกุล
+  document.write("ชื่อ-นามสกุล: " + person.firstName + " " + person.lastName + "<br>");
+  console.log("ชื่อ-นามสกุล: " + person.firstName + " " + person.lastName + "<br>");
+ 
+  // แสดงอายุ
+  document.write("อายุ: " + person.age + "<br>");
+  console.log("อายุ: " + person.age + "<br>");
+ 
+  // แสดงที่อยู่
+  document.write("ที่อยู่: " + person.address.streetAddress + ", "  + person.address.city + ", " + person.address.state + " " 
+  + person.address.postalCode + "<br>");
+  console.log("ที่อยู่: " + person.address.streetAddress + ", "  + person.address.city + ", " + person.address.state + " " 
+  + person.address.postalCode + "<br>");
+ 
+  document.write('<br>');
+ 
+  // แสดงเบอร์โทรศัพท์
+  document.write(
+    "เบอร์โทรศัพท์:<br>" +
+    "home: " + person.phoneNumbers[0].number + "<br>" +
+    "office: " + person.phoneNumbers[1].number + "<br>" +
+    "mobile: " + person.phoneNumbers[2].number + "<br>"
+  );
+  console.log(
+    "เบอร์โทรศัพท์:<br>" +
+    "home: " + person.phoneNumbers[0].number + "<br>" +
+    "office: " + person.phoneNumbers[1].number + "<br>" +
+    "mobile: " + person.phoneNumbers[2].number + "<br>"
+  );
+</script>

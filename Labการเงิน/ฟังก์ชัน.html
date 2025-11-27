@@ -1,0 +1,57 @@
+<script>
+	
+	console.log(1000);
+	function hello()
+	{
+		
+		console.log("สวัสดี");
+		console.log("ชาวโลก");
+	}
+	hello();
+	console.log(1111);
+	hello();
+	hello();
+
+
+	function plusNumber()
+	{
+		let a = 20;
+		let b = 30;
+		let c = a+b;
+		console.log(c);
+	}
+	plusNumber();
+
+
+	function helloUser(userName = "unknow")
+	{
+		console.log("สวัสดี");
+		console.log(userName);
+	}
+
+	helloUser("ลิซ่า");
+	helloUser("แบมแบม");
+	helloUser();
+
+
+	function plusNumber2(a=0,b=0)
+	{
+		let c = a+b;
+		console.log(c);
+	}
+	plusNumber2(100,200);
+	plusNumber2(5,7);
+
+
+	function plusNumber3(a=0,b=0)
+	{
+		let c = a+b;
+		return c;
+	}
+	let result;
+	result = 10 * plusNumber3(1,2);
+	console.log(result);
+
+
+
+</script>

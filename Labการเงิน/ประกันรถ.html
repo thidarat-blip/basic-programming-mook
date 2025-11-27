@@ -1,0 +1,75 @@
+<script>
+	let price = Number(prompt(" ราคารถออกใหม่ "));
+	let age = Number(prompt(" อายุการใช้งานรถ (ปี)  "));
+	let insuCapital;// ทุนประกัน
+	let insuPayment;//เบี้ยประกัน
+ 
+	if (age <= 5)
+	{
+		insuCapital = price * 0.8;
+		insuPayment = insuCapital * 0.03;
+		if(insuPayment  < 15000)
+		{
+		console.log(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " +  insuCapital);
+		console.log(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = "  + '15000');
+		document.write(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " + insuCapital);
+		document.write('<br>');
+		document.write(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = " + '15000');
+		}
+ 
+		if(insuPayment  >= 15000)
+		{
+		console.log(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " +  insuCapital);
+		console.log(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = "  + insuPayment);
+		document.write(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " + insuCapital);
+		document.write('<br>');
+		document.write(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = " + insuPayment);
+		}
+	}
+	else if ( age > 5 && age <= 10)  
+	{
+		insuCapital = price * 0.6;
+		insuPayment = insuCapital * 0.03;
+ 
+		if(insuPayment  < 15000)
+		{
+		console.log(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " +  insuCapital);
+		console.log(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = "  + '15000');
+		document.write(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " + insuCapital);
+		document.write('<br>');
+		document.write(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = " + '15000');
+		}
+ 
+		if(insuPayment  >= 15000)
+		{
+		console.log(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " +  insuCapital);
+		console.log(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = "  + insuPayment);
+		document.write(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " + insuCapital);
+		document.write('<br>');
+		document.write(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = " + insuPayment);
+		}
+	}
+	else if (age > 10) 
+	{
+		insuCapital = price * 0.4;
+		insuPayment = insuCapital * 0.03;
+ 
+		if(insuPayment  < 15000)
+		{
+		console.log(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " +  insuCapital);
+		console.log(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = "  + '15000');
+		document.write(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " + insuCapital);
+		document.write('<br>');
+		document.write(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = " + '15000');
+		}
+ 
+		if(insuPayment  >= 15000)
+		{
+		console.log(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " +  insuCapital);
+		console.log(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = "  + insuPayment);
+		document.write(" ทุนประกันรถยนต์ที่บริษัทจะจ่ายสินไหมทดแทน = " + insuCapital);
+		document.write('<br>');
+		document.write(" เบี้ยประกันรถยนต์ที่ผู้เอาประกันต้องชำระต่อปี = " + insuPayment);
+		}
+	}
+</script>

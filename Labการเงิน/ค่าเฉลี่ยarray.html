@@ -1,0 +1,20 @@
+<script>
+        let size = prompt("จำนวนนักเรียน:");
+        let scores = [];
+        let sum = 0;
+ 
+        for (let i = 0; i < size; i++) // วนลูปตามจำนวนผู้เรียนที่ระบุเพื่อรับค่าคะแนนทีละคน
+        {
+            let score = prompt("ป้อนคะแนนนักเรียนคนที่ " + (i + 1) + ":");
+            scores.push(Number(score));
+            sum += Number(score); // บวกคะแนนเข้ากับผลรวม
+        }
+ 
+        for (let i = scores.length - 1; i >= 0; i--) // แสดงคะแนนนักเรียนแบบเรียงย้อนกลับ
+        {
+            document.write("คะแนนนักเรียนคนที่ " + (i + 1) + ' = ' + scores[i] + "<br>");
+        }
+ 
+        document.write('------------------------------' + '<br>')
+        document.write("คะแนนเฉลี่ยเท่ากับ " + (sum / size) + "<br>"); // คำนวณและแสดงคะแนนเฉลี่ย
+</script>

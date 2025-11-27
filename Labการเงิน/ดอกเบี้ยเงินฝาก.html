@@ -1,0 +1,14 @@
+<script> 
+	let R =Number(prompt("ป้อนอัตราดอกเบี้ย(คิดเป็นร้อยละต่อปี) "));
+	let P =Number(prompt("ป้อนเงินต้น(บาท) "));
+	let N =Number(prompt("ป้อนเวลา(ปี) "));
+ 	let I =(R/100)*P*N;
+	
+	result=I+P;
+	console.log(" ดอกเบี้ยเงินฝากคงต้นที่ได้รับทั้งหมดเมื่อสิ้นสุดการฝาก: "+ I + " บาท ")
+	console.log(" เงินรวม: " + result + " บาท ")
+
+ 	document.write(" ดอกเบี้ยเงินฝากคงต้นที่ได้รับทั้งหมดเมื่อสิ้นสุดการฝาก: " + I + " บาท ") 
+ 	document.write(" <br> ")
+ 	document.write(" เงินรวม: " + result + " บาท ") 
+</script>

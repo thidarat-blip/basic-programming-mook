@@ -1,0 +1,28 @@
+<script>
+	let P = Number(prompt(" เงินฝากตั้งต้น "));
+ 
+	if (P >= 1000000)
+	{
+		result  = P * 0.03;
+		sum = result + P;
+
+	}
+	else if (P >= 500000)
+	{
+		result = P * 0.02;
+		sum =  result + P;
+	}
+	else
+	{
+		result = P * 0.01;
+		sum =  result + P;
+	}
+	
+
+	document.write(" โปรแกรมคำนวณดอกเบี้ยเงินฝากประจำ " + "<br>" );
+	document.write(" เงินฝากตั้งต้น : " + P + "บาท" + "<br>" );
+	document.write(" อัตราดอกเบี้ย : " + "2%" + "<br>" );
+	document.write("********************************" + "<br>")
+	document.write(" ดอกเบี้ยที่จะได้รับ " + result + " บาท " + "<br>");
+	document.write("เงินฝากตั้งต้นรวมกับดอกเบี้ยที่จะได้รับ : " + sum + " บาท " + "<br>")
+</script>

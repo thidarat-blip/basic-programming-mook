@@ -1,0 +1,18 @@
+<script>
+	let name = prompt("ชื่อสินค้า");
+	let price =  Number(prompt("ราคาต่อหน่วย"));
+	let J =  Number(prompt("จำนวน"));
+
+
+	ans1 = price*J;
+	ans2 = (price*J) + (ans1*0.07)
+
+	document.write("โปรแกรมขายหน้าร้าน" + "<br>")
+	document.write("ชื่อสินค้า : " + name + "<br>")
+	document.write("ราคาต่อหน่วย : " +  price + "<br>")
+	document.write("จำนวน : " +  J + "<br>")
+	document.write("********************************" + "<br>")
+	document.write("ราคาก่อนรวมภาษี : " + ans1 + "<br>")
+	document.write("ราคาหลังรวมภาษี 7% แล้ว : "+ ans2)
+	
+</script>

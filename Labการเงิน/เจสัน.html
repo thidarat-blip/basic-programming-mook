@@ -1,0 +1,12 @@
+<script> 
+     let myJSON = '{"firstName":"Kate", "pet": {"dog":"Yellow", "rabbit":"pink"},"lastName":"Pill"}'; 
+     let person = JSON.parse(myJSON); 
+     person.firstName = "Kate" ;
+     person.pet.dog = "Yellow";
+     person.pet.rabbit = "pink";
+     person.lastName = "Pill" ;
+     let JSONText; 
+     JSONText = JSON.stringify(person); 
+     console.log(JSONText);  
+     document.write(JSONText);
+</script>

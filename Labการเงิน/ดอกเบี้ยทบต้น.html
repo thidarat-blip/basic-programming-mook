@@ -1,0 +1,17 @@
+<script >
+	let P = Number(prompt("จำนวนเงินฝากเริ่มต้น")); //เงินต้น (จำนวนเงินเริ่มต้น)
+	let r = Number(prompt("อัตราดอกเบี้ยต่อปี"));//อัตราดอกเบี้ยต่อปี
+	let t = Number(prompt("ระยะเวลาการฝาก (ปี)"));//จำนวนปี	
+	let n = Number(prompt("จำนวนครั้งที่ทบต้นต่อปี")); //จำนวนครั้งที่ทบต้นต่อปี
+	let currentMoney=0; 
+
+	currentMoney = P;
+	I = r/100;
+	N = t*n;
+ 	for (let i=1; i <= t; i++)
+ 	{
+ 		currentMoney = currentMoney+(currentMoney*I);
+ 		document.write("ยอดเงินปีที่ "+ i + "เท่ากับ" + currentMoney);
+
+ 	}
+</script>
